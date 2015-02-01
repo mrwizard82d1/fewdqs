@@ -1,13 +1,11 @@
-<!-- Examples of "phony" markup. -->
-<!-- A simple element -->
-<foo>Hello</foo>
-
-<!-- Sibling elements -->
-<foo>Hello</foo>
-<bar/>
-
-<!-- Parent-child elements -->
-<foo>
-  <bar />
-  <quux>Hello World!</quux>
-</foo>
+<!-- Beginning real (HTML) markup (just a fragment). -->
+<div>
+  <!-- The img tag is always atomic; that is, it has **no** content. -->
+  <img />
+  <!-- The paragraph tag supports content. -->
+  <!--
+  Additionally, one can embed markup within the content of the
+  paragraph conent.
+  -->
+  <p>Hello, <b>Markup</b> World!</p>
+</div>
