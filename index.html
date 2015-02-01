@@ -27,17 +27,26 @@
 
       <!--
       Adding labels to our form.
+
+      The "for" attribute on labels searches not for the "name"
+      attribute but for the "id" attribute - so we must repeat the
+      data. :(
+
+      Labels allow a user to click on the label which puts the focus
+      on the corresponding control.
       -->
       <form action="http://wilder.azurewebsites.net/echo"
 	    method="POST">
 	<!-- Labels can come BEFORE the element. -->
 	<label for="searchPhrase">Search phrase:</label>
-	<input name="searchPhrase"/><br>
-	<input type="checkbox" name="useStars" checked="true" />
+	<input name="searchPhrase" id="searchPhrase"/><br>
+	<input type="checkbox" name="useStars" id="useStars"
+	       checked="true" />
 	<!-- Or AFTER. -->
 	<!-- Note that the "for" attribute ties them together. -->
 	<label for="useStars">Use stars?</label><br/>
-	<select name="langChoice">
+	<label for="langChoice">Language:</label>
+	<select name="langChoice" id="langChoice">
 	  <option>All</option>
 	  <option>JavaScript</option>
 	  <option selected>C#</option>
