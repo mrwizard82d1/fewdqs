@@ -5,15 +5,30 @@
   </head>
   <body>
     <!--
-    Let's now replace our simple header with an image. The browser
-    will search for this image in the folder img relative to the
-    current document. It will then display the image from the file
-    logo.gif in that folder.
+    Using divs to structure page.
+
+    Remember that a div has no UI unless you add a style to provide
+    color or other visual attributes.
     -->
-    <h1>GitHub Hub<br><img src="img/mrwizard.jpg"/></h1>
-    <p>This is a site to search GitHub for interesting projects.</p>
+
+    <!-- Page header -->
+    <div>
+      <h1>GitHub Hub<br><img src="img/mrwizard.jpg"/></h1>
+      <p>This is a site to search GitHub for interesting projects.</p>
+    </div>
+
+    <!-- Page body -->
+    <div>
     <p>In this <em>sample site</em>, we'll show a list
     of <a href="http://github.com">GitHub</a> projects and the data
-    about <strong>those projects</strong>.</p> 
+    about <strong>those projects</strong>.</p>
+    </div>
+    
+    <!-- Page footer -->
+    <!-- Illustrates use of entity references and Unicode characters. --> 
+    <div>
+      <!-- Added uppercase omega. -->
+      &copy; 2015 Lawrence Allan Jones &#937
+    </div>
   </body>
 </html>
