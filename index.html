@@ -26,13 +26,17 @@
       data</span> about <strong>those projects</strong>.</p> 
 
       <!--
-      Adding action to our form.
+      Adding labels to our form.
       -->
       <form action="http://wilder.azurewebsites.net/echo"
-	    method="post">
+	    method="POST">
+	<!-- Labels can come BEFORE the element. -->
+	<label for="searchPhrase">Search phrase:</label>
 	<input name="searchPhrase"/><br>
-	<input type="checkbox" name="useStars" checked="true" /> Use
-	stars?<br/>
+	<input type="checkbox" name="useStars" checked="true" />
+	<!-- Or AFTER. -->
+	<!-- Note that the "for" attribute ties them together. -->
+	<label for="useStars">Use stars?</label><br/>
 	<select name="langChoice">
 	  <option>All</option>
 	  <option>JavaScript</option>
