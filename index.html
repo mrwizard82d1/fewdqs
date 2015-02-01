@@ -33,7 +33,15 @@
       <form action="http://wilder.azurewebsites.net/echo">
 	<input name="searchPhrase"/><br>
 	<input type="checkbox" name="useStars" checked="true" /> Use
-	stars?<br/> 
+	stars?<br/>
+	<!-- Add language selection. -->
+	<select name="langChoice">
+	  <option selected="true">All</option>
+	  <option>JavaScript</option>
+	  <option>C#</option>
+	  <option>Java</option>
+	  <option>Ruby</option>
+	</select>
 	<input type="submit" value="search" />
       </form>
     </section>
