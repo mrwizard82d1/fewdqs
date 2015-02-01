@@ -27,20 +27,13 @@
 
       <!--
       Adding action to our form.
-
-      The action does nothing because inputs have no names.
       -->
-      <form action="http://wilder.azurewebsites.net/echo">
+      <form action="http://wilder.azurewebsites.net/echo"
+	    method="post">
 	<input name="searchPhrase"/><br>
 	<input type="checkbox" name="useStars" checked="true" /> Use
 	stars?<br/>
-	<!-- Add language selection. -->
 	<select name="langChoice">
-	  <!--
-	  Do not need value for selected attribute.
-	  
-	  Select an item other than the first.
-	  -->
 	  <option>All</option>
 	  <option>JavaScript</option>
 	  <option selected>C#</option>
